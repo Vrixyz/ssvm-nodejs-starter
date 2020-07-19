@@ -12,4 +12,5 @@ RUN curl -sL https://deb.nodesource.com/setup_14.x |  bash \
     && npm install -y -g ssvmup --unsafe-perm \
     && npm install -y ssvm
 RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-COPY . /app
+RUN rustup default nightly
+RUN npm install canvas

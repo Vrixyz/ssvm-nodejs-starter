@@ -1,3 +1,9 @@
+# Fork specifics
+
+Run with:
+<pre>docker build -t ssvmup:v1</pre>
+<pre>docker run -v `pwd`:/app -p 3001:3000 -it ssvmup:v1`</pre>
+
 # Getting started
 
 ![Build and test](https://github.com/second-state/ssvm-nodejs-starter/workflows/Build%20and%20test/badge.svg)
